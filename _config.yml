@@ -288,9 +288,10 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      comments: true   # blog comments
       share: true
       related: true
-      
+
   # _pages
   - scope:
       path: ""
@@ -302,5 +303,3 @@ defaults:
       comments: true # false
       share: true
       related: false
-      
-theme: jekyll-theme-cayman
