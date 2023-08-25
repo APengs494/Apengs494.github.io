@@ -34,3 +34,4 @@ labels = kmeans.labels_
 
 # 获取簇的中心点坐标
 centroids = kmeans.cluster_centers_
+```
