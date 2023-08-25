@@ -1,0 +1,36 @@
+---
+title: "使用K-Means进行聚类"
+categories:
+  - 数据科学
+tags:
+  - 特征工程
+  - 聚类分析
+  - K-Means
+---
+
+## 简介
+
+在这篇博客中，我们将探索一种无监督学习技术——K-Means聚类。通过阅读本文，你将学习如何利用K-Means算法创建特征。
+
+## 什么是K-Means聚类？
+
+K-Means聚类是一种常见的聚类分析方法，它将数据集划分为K个不同的簇（cluster）。每个簇都具有相似的特征或属性，而不同簇之间的特征差异较大。
+
+## 示例代码
+
+下面是使用Python实现K-Means聚类的示例代码：
+
+```python
+from sklearn.cluster import KMeans
+
+# 创建K-Means模型并指定簇的数量为3
+kmeans = KMeans(n_clusters=3)
+
+# 训练模型并进行聚类
+kmeans.fit(data)
+
+# 获取每个样本所属的簇标签
+labels = kmeans.labels_
+
+# 获取簇的中心点坐标
+centroids = kmeans.cluster_centers_
